@@ -53,9 +53,9 @@ public class CustomerService {
 
         Customer c = new Customer();
 
-        customer.setFirstName(c.getFirstName());
-        customer.setLastName(c.getLastName());
-        customer.setEmail(c.getEmail());
+        c.setFirstName(customer.getFirstName());
+        c.setLastName(customer.getLastName());
+        c.setEmail(customer.getEmail());
 
         return customerRepository.save(customer);
     }
